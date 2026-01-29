@@ -33,4 +33,9 @@ This repository demonstrates practical skills in:
 ## Dataset
 **Pokémon Image Dataset (809 sprites)**  
 
-**This repository includes the dataset** because it is small. 
+The Pokémon image dataset used for training was **provided directly by my professor** as part of the course materials.  
+The **original source or license information is unknown**.  
+
+Because of this, the dataset is **not included** in this repository.  
+To run the project, you will need to **supply your own Pokémon image dataset** (e.g., from Kaggle or your own collection) and place it in: './data/pokemon'
+
