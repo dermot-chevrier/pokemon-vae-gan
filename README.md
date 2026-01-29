@@ -39,3 +39,5 @@ The **original source or license information is unknown**.
 Because of this, the dataset is **not included** in this repository.  
 To run the project, you will need to **supply your own Pokémon image dataset** (e.g., from Kaggle or your own collection) and place it in: './data/pokemon'
 
+**Note:**  
+All generated reconstructions, samples, and interpolation results are saved in: Vae/keep/
