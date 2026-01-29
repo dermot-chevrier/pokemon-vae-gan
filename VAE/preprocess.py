@@ -3,7 +3,7 @@ from PIL import Image
 from torch.utils.data import Dataset, DataLoader, random_split
 import torchvision.transforms as transforms
 
-DATA_DIR = "C:/Users/Dermot/Desktop/Uni/ML 2/Project1/Vae/Generate new Pokemon (1)/Generate new Pokemon/images"
+DATA_DIR = "./Generate new Pokemon (1)/Generate new Pokemon/images"
 
 # Dataset for unlabeled images 
 class PokemonDataset(Dataset):
@@ -49,4 +49,5 @@ train_dataset, test_dataset = random_split(full_dataset, [train_size, test_size]
 #  Dataloaders 
 train_loader = DataLoader(train_dataset, batch_size=32, shuffle=True)
 test_loader = DataLoader(test_dataset, batch_size=32, shuffle=False)
+
 
