@@ -33,27 +33,27 @@ This repository demonstrates practical skills in:
 ---
 ## Repository Structure
 
-pokemon-generator/
-├── Vae/
-│   ├── keep/                  # Output images (reconstructions, generated, interpolation)
-│   ├── generate.py
-│   ├── interpolate.py
-│   ├── model.py
-│   ├── preprocess.py
-│   └── train_vae.py
-│
-├── Gans/
-│   ├── model1.py
-│   ├── model2.py
-│   ├── model3.py             # Best GAN version
-│   ├── training1.py
-│   ├── training2.py
-│   ├── training3.py          # Best training version
-│   ├── data_loader1.py
-│   └── data_loader2.py
-│
-├── README.md
-└── requirements.txt
+    pokemon-generator/
+    ├── Vae/
+    │   ├── keep/                  # Output images (reconstructions, generated, interpolation)
+    │   ├── generate.py
+    │   ├── interpolate.py
+    │   ├── model.py
+    │   ├── preprocess.py
+    │   └── train_vae.py
+    │
+    ├── Gans/
+    │   ├── model1.py
+    │   ├── model2.py
+    │   ├── model3.py             # Best GAN version
+    │   ├── training1.py
+    │   ├── training2.py
+    │   ├── training3.py          # Best training version
+    │   ├── data_loader1.py
+    │   └── data_loader2.py
+    │
+    ├── README.md
+    └── requirements.txt
 
 ---
 
