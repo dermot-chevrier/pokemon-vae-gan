@@ -2,8 +2,9 @@
 Variational Autoencoder trained on 809 Pokémon sprites for image generation, reconstruction, and latent space interpolation. Includes β-VAE, augmentations, and PyTorch training pipeline.
 
 ## Overview
-This project implements a **Variational Autoencoder (VAE)** trained on a curated dataset of **809 Pokémon sprites**.  
-The goal is to explore generative modeling on a small dataset, perform interpolation experiments, and analyze latent space structure.
+This project focuses on generating Pokémon images using a **Variational Autoencoder (VAE)**, with a smaller experimental **GAN** side project.  
+The VAE allows image reconstruction, latent space interpolation, and new Pokémon image generation. The GAN experiments explore higher-quality sample generation.
+
 
 Because the dataset is much smaller than typical image-generation datasets, this project focuses on:
 - training stability  
@@ -25,8 +26,34 @@ This repository demonstrates practical skills in:
 -  Reconstruction of Pokémon images  
 -  Latent space interpolation  
 -  Augmentation to improve generalization on small dataset  
--  Checkpoint saving and reproducible experiments  
+-  Checkpoint saving and reproducible experiments
+-  Experimental GAN models for additional generative quality
 -  Lightweight training 
+
+---
+## Repository Structure
+
+pokemon-generator/
+├── Vae/
+│ ├── keep/ # Output images (reconstructions, generated, interpolation)
+│ ├── generate.py
+│ ├── interpolate.py
+│ ├── model.py
+│ ├── preprocess.py
+│ └── train_vae.py
+│
+├── Gans/
+│ ├── model1.py
+│ ├── model2.py
+│ ├── model3.py # Best GAN version
+│ ├── training1.py
+│ ├── training2.py
+│ ├── training3.py # Best training version
+│ ├── data_loader1.py
+│ └── data_loader2.py
+│
+├── README.md
+└── requirements.txt
 
 ---
 
@@ -37,7 +64,35 @@ The Pokémon image dataset used for training was **provided directly by my profe
 The **original source or license information is unknown**.  
 
 Because of this, the dataset is **not included** in this repository.  
-To run the project, you will need to **supply your own Pokémon image dataset** (e.g., from Kaggle or your own collection) and place it in: './data/pokemon'
+To run the project, you will need to **supply your own Pokémon image dataset** (e.g., from Kaggle or your own collection) and place it in: "./images"
+
+---
+
+## Outputs
+
+VAE-generated samples, reconstructions, and interpolation experiments are saved in: Vae/keep/
+
+GAN outputs are saved according to the respective training scripts.
+
+---
+
+## Technologies Used
+
+- Python  
+- PyTorch  
+- Torchvision  
+- NumPy / Pandas  
+- Matplotlib  
+- TQDM  
+
+---
+
+## Notes
+
+- Focus on **VAE files** for primary experiments.  
+- Use **highest-numbered GAN files** (`model3.py`, `training3.py`, `data_loader2.py`) if you explore GAN experiments.  
+- This repository showcases deep learning skills in generative modeling and PyTorch.
+
 
 **Note:**  
 All generated reconstructions, samples, and interpolation results are saved in: Vae/keep/
